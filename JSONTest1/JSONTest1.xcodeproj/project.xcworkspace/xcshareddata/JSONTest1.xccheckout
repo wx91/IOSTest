@@ -7,34 +7,34 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>A503458A-1892-4501-A974-1F989FAAC6DA</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>JSONTest1</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>191001AC774C8DBAFAAD8CD27B229EB1423F56A0</key>
-		<string>https://github.com/wx91/IOSStudy.git</string>
+		<key>9FF99AC3463B123C37FBE70F9A4D9ED89FE8FCF3</key>
+		<string>https://github.com/wx91/IOSTest.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>JSONTest1/JSONTest1.xcodeproj/project.xcworkspace</string>
+	<string>JSONTest1/JSONTest1.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>191001AC774C8DBAFAAD8CD27B229EB1423F56A0</key>
+		<key>9FF99AC3463B123C37FBE70F9A4D9ED89FE8FCF3</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/wx91/IOSStudy.git</string>
+	<string>https://github.com/wx91/IOSTest.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>191001AC774C8DBAFAAD8CD27B229EB1423F56A0</string>
+	<string>9FF99AC3463B123C37FBE70F9A4D9ED89FE8FCF3</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>191001AC774C8DBAFAAD8CD27B229EB1423F56A0</string>
+			<string>9FF99AC3463B123C37FBE70F9A4D9ED89FE8FCF3</string>
 			<key>IDESourceControlWCCName</key>
-			<string>IOSStudy</string>
+			<string>IOSTest</string>
 		</dict>
 	</array>
 </dict>
