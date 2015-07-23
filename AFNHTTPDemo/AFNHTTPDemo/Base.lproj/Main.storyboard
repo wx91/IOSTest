@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CtM-JG-z8b">
+                                <rect key="frame" x="122" y="20" width="55" height="30"/>
+                                <state key="normal" title="Get示例">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getDemo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gft-wb-r2x"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="juS-5a-wlC">
+                                <rect key="frame" x="94" y="65" width="107" height="30"/>
+                                <state key="normal" title="Post示例带参数">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getDemo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ndc-0O-BXv"/>
+                                    <action selector="postparamDemo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yKl-m4-TD1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sjB-pp-zfK">
+                                <rect key="frame" x="79" y="113" width="137" height="30"/>
+                                <state key="normal" title="Post上传文件带参数">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getDemo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vAJ-8z-wzE"/>
+                                    <action selector="postParamWithFile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ubS-M7-tYP"/>
+                                    <action selector="postparamDemo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5eS-Oz-DHC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GbI-x4-xFz">
+                                <rect key="frame" x="119" y="151" width="60" height="30"/>
+                                <state key="normal" title="下载任务">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="downloadPost:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jP2-D6-Q49"/>
+                                    <action selector="getDemo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ELw-fT-c93"/>
+                                    <action selector="postParamWithFile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WXM-CD-0VF"/>
+                                    <action selector="postparamDemo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l1Z-Qk-oun"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bpY-UP-LXa">
+                                <rect key="frame" x="85" y="189" width="150" height="30"/>
+                                <state key="normal" title="通过表单上传多个文件">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="downloadPost:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5WJ-wA-3Mf"/>
+                                    <action selector="getDemo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dVK-Li-jr8"/>
+                                    <action selector="postParamWithFile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cY4-kj-zhh"/>
+                                    <action selector="postParamWithFiles:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6qn-la-yzn"/>
+                                    <action selector="postparamDemo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QRg-c0-SHZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cmh-fd-pCh">
+                                <rect key="frame" x="100" y="233" width="120" height="30"/>
+                                <state key="normal" title="通过表单数组参数">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="downloadPost:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fav-YX-7Zb"/>
+                                    <action selector="getDemo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M6B-bg-cpv"/>
+                                    <action selector="postParamWithFile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1A5-Xk-Kk3"/>
+                                    <action selector="postParamWithFiles:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kWN-yy-FoB"/>
+                                    <action selector="postparamDemo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iwM-tR-rQF"/>
+                                    <action selector="postwithArray:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B0x-am-j8f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hg6-tR-2ly">
+                                <rect key="frame" x="79" y="269" width="182" height="30"/>
+                                <state key="normal" title="AFHTTPRequestOperation">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="RequestOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lnn-wb-mi5"/>
+                                    <action selector="downloadPost:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZjH-El-hOT"/>
+                                    <action selector="getDemo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wZ4-lX-j0p"/>
+                                    <action selector="postParamWithFile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FFR-pf-iBK"/>
+                                    <action selector="postParamWithFiles:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pzc-zk-LwM"/>
+                                    <action selector="postparamDemo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qp9-zL-Zgy"/>
+                                    <action selector="postwithArray:" destination="BYZ-38-t0r" eventType="touchUpInside" id="na1-qR-lUD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AMB-It-ThM">
+                                <rect key="frame" x="103" y="307" width="92" height="30"/>
+                                <state key="normal" title="requestBatch">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="RequestOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kdq-Gi-iNZ"/>
+                                    <action selector="downloadPost:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nOs-GG-9cH"/>
+                                    <action selector="getDemo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mb2-Tr-EoO"/>
+                                    <action selector="postParamWithFile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6gu-gm-oq0"/>
+                                    <action selector="postParamWithFiles:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MbI-4y-gzW"/>
+                                    <action selector="postparamDemo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xOk-EP-g8p"/>
+                                    <action selector="postwithArray:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mjH-OR-FO9"/>
+                                    <action selector="requestBatch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6wr-k1-lY3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
