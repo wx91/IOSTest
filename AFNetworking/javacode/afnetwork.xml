@@ -8,19 +8,42 @@
 		<action name="LoginAction" class="com.wxiang1991.afnetworking.LoginAction" method="execute">
 			<result name="successs">/afnetwork/success.jsp</result>
 		</action>
+		<!-- 使用post方法提交一般参数 -->
 		<action name="LoginRegistAction" class="com.wxiang1991.afnetworking.LoginAction" method="register">
 			<result>/afnetwork/register.jsp</result>
 		</action>
-		<action name="LoginUploadAction" class="com.wxiang1991.afnetworking.LoginAction" method="upload">
-			<result>/afnetwork/upload.jsp</result>
-		</action>
-		
+		<!-- 使用post方法提交参数数组 -->
 		<action name="LoginParamWithArrayAction" class="com.wxiang1991.afnetworking.LoginAction" method="paramWithArray">
-			<result>/afnetwork/upload.jsp</result>
+			<result>/afnetwork/register.jsp</result>
 		</action>
-		
+		<!-- 使用post方法提交单个文件-->
 		<action name="UploadAction" class="com.wxiang1991.afnetworking.UploadAction" method="upload">
 			<result>/afnetwork/upload.jsp</result>
 		</action>
+		<!-- 使用post方法提交多个文件-->
+		<action name="UploadsAction" class="com.wxiang1991.afnetworking.UploadsAction" method="uploads">
+			<result>/afnetwork/upload.jsp</result>
+		</action>
+		
+		<action name="download" class="com.wxiang1991.afnetworking.FileDownloadAction">
+            <param name="inputPath">/images/struts.gif</param>
+			<result name="success" type="stream">
+                <param name="contentType">image/gif</param>
+                <param name="inputName">inputStream</param>
+                <param name="contentDisposition">filename="struts.gif"</param>
+                <param name="bufferSize">4096</param>
+            </result>
+        </action>
+
+        <action name="download2" class="com.wxiang1991.afnetworking.FileDownloadAction">
+            <param name="inputPath">/images/struts-gif.zip</param>
+            <result name="success" type="stream">
+                <param name="contentType">application/zip</param>
+                <param name="inputName">inputStream</param>
+                <param name="contentDisposition">filename="struts-gif.zip"</param>
+                <param name="bufferSize">4096</param>
+            </result>
+        </action>
+		
 	</package>
 </struts>

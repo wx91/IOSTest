@@ -6,30 +6,40 @@ import java.util.List;
 
 import com.opensymphony.xwork2.ActionSupport;
 
-public class UploadAction extends ActionSupport{
+public class UploadsAction extends ActionSupport {
 	private List<File> upload = new ArrayList<File>();
 	private List<String> uploadFileName = new ArrayList<String>();
 	private List<String> uploadContentType = new ArrayList<String>();
+
 	public List<File> getUpload() {
 		return upload;
 	}
+
 	public void setUpload(List<File> upload) {
 		this.upload = upload;
 	}
+
 	public List<String> getUploadFileName() {
 		return uploadFileName;
 	}
+
 	public void setUploadFileName(List<String> uploadFileName) {
 		this.uploadFileName = uploadFileName;
 	}
+
 	public List<String> getUploadContentType() {
 		return uploadContentType;
 	}
+
 	public void setUploadContentType(List<String> uploadContentType) {
 		this.uploadContentType = uploadContentType;
 	}
-	
-	public String upload() throws Exception {
+
+	public String execute() throws Exception {
+		return SUCCESS;
+	}
+
+	public String uploads() throws Exception {
 		System.out.println("\n\n upload1");
 		System.out.println("files:");
 		for (File u : upload) {
@@ -46,5 +56,5 @@ public class UploadAction extends ActionSupport{
 		System.out.println("\n\n");
 		return SUCCESS;
 	}
-	
+
 }

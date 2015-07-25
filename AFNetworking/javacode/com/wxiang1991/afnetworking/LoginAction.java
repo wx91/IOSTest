@@ -17,10 +17,6 @@ public class LoginAction extends ActionSupport {
 	private String foo;
 	private String baz[];
 
-	private File upload;
-	private String uploadFileName;
-	private String uploadContentType;
-
 	public String getUsername() {
 		return username;
 	}
@@ -53,30 +49,6 @@ public class LoginAction extends ActionSupport {
 		this.baz = baz;
 	}
 
-	public File getUpload() {
-		return upload;
-	}
-
-	public void setUpload(File upload) {
-		this.upload = upload;
-	}
-
-	public String getUploadFileName() {
-		return uploadFileName;
-	}
-
-	public void setUploadFileName(String uploadFileName) {
-		this.uploadFileName = uploadFileName;
-	}
-
-	public String getUploadContentType() {
-		return uploadContentType;
-	}
-
-	public void setUploadContentType(String uploadContentType) {
-		this.uploadContentType = uploadContentType;
-	}
-
 	public String execute() throws Exception {
 		return SUCCESS;
 	}
@@ -86,13 +58,8 @@ public class LoginAction extends ActionSupport {
 		return SUCCESS;
 	}
 
-	public String upload() throws Exception {
-		System.out.println("username=" + getUsername() + "password=" + getPassword());
-		return SUCCESS;
-	}
-
 	public String paramWithArray() throws Exception {
-		HttpServletRequest request=ServletActionContext.getRequest();
+		HttpServletRequest request = ServletActionContext.getRequest();
 		System.out.println(request.getQueryString());
 		System.out.println("foo=" + getFoo());
 		for (String n : getBaz()) {
