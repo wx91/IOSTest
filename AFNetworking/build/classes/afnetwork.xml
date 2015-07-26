@@ -8,7 +8,7 @@
 		<action name="LoginAction" class="com.wxiang1991.afnetworking.LoginAction" method="execute">
 			<result name="successs">/afnetwork/success.jsp</result>
 		</action>
-		<!-- 使用post方法提交一般参数 -->
+		<!-- 使用post方法提交一般参数 --> 
 		<action name="LoginRegistAction" class="com.wxiang1991.afnetworking.LoginAction" method="register">
 			<result>/afnetwork/register.jsp</result>
 		</action>
@@ -44,6 +44,10 @@
                 <param name="bufferSize">4096</param>
             </result>
         </action>
+		
+		<action name="JSONProvideAction" class="com.wxiang1991.afnetworking.JSONProvideAction" method="provide">
+		
+		</action>
 		
 	</package>
 </struts>

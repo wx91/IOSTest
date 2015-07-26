@@ -198,8 +198,6 @@
     [request setDownloadProgressDelegate:self];
     [request setTemporaryFileDownloadPath:folderPath];
     [request setAllowResumeForFileDownloads:YES];
-    
-    
 }
 
 //设置缓存
