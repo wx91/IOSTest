@@ -28,11 +28,11 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        //execute(KeyValue2Object, @"简单的字典->模型");
+        execute(KeyValue2Object, @"简单的字典->模型");
         //execute(KeyValue2Object1, @"JSON字符串->模型");
         //execute(KeyValues2Object2, @"复杂的字典 -> 模型 (模型里面包含了模型)");
         //execute(KeyValues2Object3, @"复杂的字典 -> 模型 (模型的数组属性里面又装着模型)");//有问题
-        execute(KeyValues2Object4, @"简单的字典 -> 模型（key替换，比如ID和id，支持多级映射）");//有问题
+//        execute(KeyValues2Object4, @"简单的字典 -> 模型（key替换，比如ID和id，支持多级映射）");//有问题
         //execute(keyValuesArray2objectArray, @"字典数组 -> 模型数组");
         //execute(object2keyValues, @"模型转字典");
         //execute(objectArray2keyValuesArray, @"模型数组 -> 字典数组");
@@ -57,10 +57,11 @@ void KeyValue2Object(){
                          @"name":@"Jack",
                          @"icon":@"lufy.png",
                          @"age":@"20",
-                         @"height":@1.55,
+//                         @"height":nil,
                          @"money":@"100.9",
                          @"sex":@(SexFemale),
-                         @"gay":@"true"
+                         @"gay":@"true",
+                         @"student":@"adfasfds"
                          };
     //2.将字典转为User模型
     User *user=[User objectWithKeyValues:dict];
