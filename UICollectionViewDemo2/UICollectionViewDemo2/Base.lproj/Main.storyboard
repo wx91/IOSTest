@@ -1,25 +1,76 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nSr-LO-3IX">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Collection View Controller-->
+        <scene sceneID="bGq-Yp-09u">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <collectionViewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="nSr-LO-3IX" customClass="CollectionViewController" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="PWY-B5-7Js">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="AbZ-X7-XG2">
+                            <size key="itemSize" width="100" height="100"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionViewCell" id="zv3-0B-6YQ" customClass="CollectionViewCell">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="003.jpg" highlightedImage="002.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="gog-Ub-tjZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eHT-GF-XBB">
+                                            <rect key="frame" x="80" y="0.0" width="20" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="20" id="6WT-ap-DZ4"/>
+                                                <constraint firstAttribute="height" constant="20" id="UKe-dT-wrx"/>
+                                            </constraints>
+                                            <state key="normal" image="checkbox_no.png"/>
+                                            <state key="selected" image="checkbox_yes.png"/>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="gog-Ub-tjZ" secondAttribute="trailing" id="8Nk-oK-f9u"/>
+                                    <constraint firstAttribute="bottom" secondItem="gog-Ub-tjZ" secondAttribute="bottom" id="ELd-w6-81D"/>
+                                    <constraint firstAttribute="trailing" secondItem="eHT-GF-XBB" secondAttribute="trailing" id="PZQ-EI-dql"/>
+                                    <constraint firstItem="gog-Ub-tjZ" firstAttribute="leading" secondItem="zv3-0B-6YQ" secondAttribute="leading" id="dmU-gq-g7O"/>
+                                    <constraint firstItem="eHT-GF-XBB" firstAttribute="top" secondItem="zv3-0B-6YQ" secondAttribute="top" id="ibr-Yg-fVa"/>
+                                    <constraint firstItem="gog-Ub-tjZ" firstAttribute="top" secondItem="zv3-0B-6YQ" secondAttribute="top" id="m8K-5f-FTQ"/>
+                                </constraints>
+                                <size key="customSize" width="100" height="100"/>
+                                <connections>
+                                    <outlet property="highlightImage" destination="gog-Ub-tjZ" id="X4y-4a-avz"/>
+                                    <outlet property="selectButton" destination="eHT-GF-XBB" id="OFE-Wn-MsO"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="nSr-LO-3IX" id="AdQ-B2-8xn"/>
+                            <outlet property="delegate" destination="nSr-LO-3IX" id="GyW-YE-9lr"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sEV-m1-YN9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="002.jpg" width="352" height="220"/>
+        <image name="003.jpg" width="317" height="220"/>
+        <image name="checkbox_no.png" width="43" height="43"/>
+        <image name="checkbox_yes.png" width="44" height="44"/>
+    </resources>
 </document>

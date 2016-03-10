@@ -9,12 +9,21 @@
 /* Begin PBXBuildFile section */
 		5023BAD81C9164B400C14A80 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5023BAD71C9164B400C14A80 /* main.m */; };
 		5023BADB1C9164B400C14A80 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5023BADA1C9164B400C14A80 /* AppDelegate.m */; };
-		5023BADE1C9164B400C14A80 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5023BADD1C9164B400C14A80 /* ViewController.m */; };
 		5023BAE11C9164B400C14A80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5023BADF1C9164B400C14A80 /* Main.storyboard */; };
 		5023BAE31C9164B400C14A80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5023BAE21C9164B400C14A80 /* Assets.xcassets */; };
 		5023BAE61C9164B400C14A80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5023BAE41C9164B400C14A80 /* LaunchScreen.storyboard */; };
 		5023BAF11C9164B400C14A80 /* UICollectionViewDemo2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5023BAF01C9164B400C14A80 /* UICollectionViewDemo2Tests.m */; };
 		5023BAFC1C9164B400C14A80 /* UICollectionViewDemo2UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5023BAFB1C9164B400C14A80 /* UICollectionViewDemo2UITests.m */; };
+		5023BB0B1C9164DF00C14A80 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5023BB0A1C9164DF00C14A80 /* CollectionViewController.m */; };
+		5023BB111C91665400C14A80 /* 002.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5023BB0D1C91665400C14A80 /* 002.jpg */; };
+		5023BB121C91665400C14A80 /* 003.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5023BB0E1C91665400C14A80 /* 003.jpg */; };
+		5023BB131C91665400C14A80 /* checkbox_no.png in Resources */ = {isa = PBXBuildFile; fileRef = 5023BB0F1C91665400C14A80 /* checkbox_no.png */; };
+		5023BB141C91665400C14A80 /* checkbox_yes.png in Resources */ = {isa = PBXBuildFile; fileRef = 5023BB101C91665400C14A80 /* checkbox_yes.png */; };
+		5023BB171C9166EC00C14A80 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5023BB161C9166EC00C14A80 /* CollectionViewCell.m */; };
+		5023BB1B1C916AEA00C14A80 /* CollectionHeaderReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5023BB191C916AEA00C14A80 /* CollectionHeaderReusableView.m */; };
+		5023BB1C1C916AEA00C14A80 /* CollectionHeaderReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5023BB1A1C916AEA00C14A80 /* CollectionHeaderReusableView.xib */; };
+		5023BB201C916B5600C14A80 /* CollectionFooterReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5023BB1E1C916B5600C14A80 /* CollectionFooterReusableView.m */; };
+		5023BB211C916B5600C14A80 /* CollectionFooterReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5023BB1F1C916B5600C14A80 /* CollectionFooterReusableView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +48,6 @@
 		5023BAD71C9164B400C14A80 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5023BAD91C9164B400C14A80 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5023BADA1C9164B400C14A80 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5023BADC1C9164B400C14A80 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5023BADD1C9164B400C14A80 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5023BAE01C9164B400C14A80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5023BAE21C9164B400C14A80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5023BAE51C9164B400C14A80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +58,20 @@
 		5023BAF71C9164B400C14A80 /* UICollectionViewDemo2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UICollectionViewDemo2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5023BAFB1C9164B400C14A80 /* UICollectionViewDemo2UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UICollectionViewDemo2UITests.m; sourceTree = "<group>"; };
 		5023BAFD1C9164B400C14A80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5023BB091C9164DF00C14A80 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		5023BB0A1C9164DF00C14A80 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
+		5023BB0D1C91665400C14A80 /* 002.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 002.jpg; sourceTree = "<group>"; };
+		5023BB0E1C91665400C14A80 /* 003.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 003.jpg; sourceTree = "<group>"; };
+		5023BB0F1C91665400C14A80 /* checkbox_no.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkbox_no.png; sourceTree = "<group>"; };
+		5023BB101C91665400C14A80 /* checkbox_yes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkbox_yes.png; sourceTree = "<group>"; };
+		5023BB151C9166EC00C14A80 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		5023BB161C9166EC00C14A80 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		5023BB181C916AEA00C14A80 /* CollectionHeaderReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionHeaderReusableView.h; sourceTree = "<group>"; };
+		5023BB191C916AEA00C14A80 /* CollectionHeaderReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionHeaderReusableView.m; sourceTree = "<group>"; };
+		5023BB1A1C916AEA00C14A80 /* CollectionHeaderReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionHeaderReusableView.xib; sourceTree = "<group>"; };
+		5023BB1D1C916B5600C14A80 /* CollectionFooterReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionFooterReusableView.h; sourceTree = "<group>"; };
+		5023BB1E1C916B5600C14A80 /* CollectionFooterReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionFooterReusableView.m; sourceTree = "<group>"; };
+		5023BB1F1C916B5600C14A80 /* CollectionFooterReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionFooterReusableView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,15 +122,24 @@
 		5023BAD51C9164B400C14A80 /* UICollectionViewDemo2 */ = {
 			isa = PBXGroup;
 			children = (
+				5023BB0C1C91665400C14A80 /* Image */,
 				5023BAD91C9164B400C14A80 /* AppDelegate.h */,
 				5023BADA1C9164B400C14A80 /* AppDelegate.m */,
-				5023BADC1C9164B400C14A80 /* ViewController.h */,
-				5023BADD1C9164B400C14A80 /* ViewController.m */,
 				5023BADF1C9164B400C14A80 /* Main.storyboard */,
 				5023BAE21C9164B400C14A80 /* Assets.xcassets */,
 				5023BAE41C9164B400C14A80 /* LaunchScreen.storyboard */,
 				5023BAE71C9164B400C14A80 /* Info.plist */,
 				5023BAD61C9164B400C14A80 /* Supporting Files */,
+				5023BB091C9164DF00C14A80 /* CollectionViewController.h */,
+				5023BB0A1C9164DF00C14A80 /* CollectionViewController.m */,
+				5023BB151C9166EC00C14A80 /* CollectionViewCell.h */,
+				5023BB161C9166EC00C14A80 /* CollectionViewCell.m */,
+				5023BB181C916AEA00C14A80 /* CollectionHeaderReusableView.h */,
+				5023BB191C916AEA00C14A80 /* CollectionHeaderReusableView.m */,
+				5023BB1A1C916AEA00C14A80 /* CollectionHeaderReusableView.xib */,
+				5023BB1D1C916B5600C14A80 /* CollectionFooterReusableView.h */,
+				5023BB1E1C916B5600C14A80 /* CollectionFooterReusableView.m */,
+				5023BB1F1C916B5600C14A80 /* CollectionFooterReusableView.xib */,
 			);
 			path = UICollectionViewDemo2;
 			sourceTree = "<group>";
@@ -138,6 +168,17 @@
 				5023BAFD1C9164B400C14A80 /* Info.plist */,
 			);
 			path = UICollectionViewDemo2UITests;
+			sourceTree = "<group>";
+		};
+		5023BB0C1C91665400C14A80 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				5023BB0D1C91665400C14A80 /* 002.jpg */,
+				5023BB0E1C91665400C14A80 /* 003.jpg */,
+				5023BB0F1C91665400C14A80 /* checkbox_no.png */,
+				5023BB101C91665400C14A80 /* checkbox_yes.png */,
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,8 +287,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5023BB1C1C916AEA00C14A80 /* CollectionHeaderReusableView.xib in Resources */,
+				5023BB111C91665400C14A80 /* 002.jpg in Resources */,
+				5023BB131C91665400C14A80 /* checkbox_no.png in Resources */,
 				5023BAE61C9164B400C14A80 /* LaunchScreen.storyboard in Resources */,
+				5023BB121C91665400C14A80 /* 003.jpg in Resources */,
 				5023BAE31C9164B400C14A80 /* Assets.xcassets in Resources */,
+				5023BB211C916B5600C14A80 /* CollectionFooterReusableView.xib in Resources */,
+				5023BB141C91665400C14A80 /* checkbox_yes.png in Resources */,
 				5023BAE11C9164B400C14A80 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,9 +320,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5023BADE1C9164B400C14A80 /* ViewController.m in Sources */,
+				5023BB201C916B5600C14A80 /* CollectionFooterReusableView.m in Sources */,
+				5023BB0B1C9164DF00C14A80 /* CollectionViewController.m in Sources */,
 				5023BADB1C9164B400C14A80 /* AppDelegate.m in Sources */,
+				5023BB171C9166EC00C14A80 /* CollectionViewCell.m in Sources */,
 				5023BAD81C9164B400C14A80 /* main.m in Sources */,
+				5023BB1B1C916AEA00C14A80 /* CollectionHeaderReusableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

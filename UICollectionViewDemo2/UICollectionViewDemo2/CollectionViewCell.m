@@ -10,4 +10,19 @@
 
 @implementation CollectionViewCell
 
+
+
+
+- (void) changeHighLightWithBool: (BOOL) highlight{
+    
+    NSString *imageName = @"003.jpg";
+    
+    if (highlight) {
+        imageName = @"002.jpg";
+    }
+    
+    [_highlightImage setImage: [UIImage imageNamed:imageName]];
+}
+
+
 @end

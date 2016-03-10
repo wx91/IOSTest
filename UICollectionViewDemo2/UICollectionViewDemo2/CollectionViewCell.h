@@ -10,4 +10,13 @@
 
 @interface CollectionViewCell : UICollectionViewCell
 
+@property (weak, nonatomic) IBOutlet UIImageView *highlightImage;
+
+
+@property (weak, nonatomic) IBOutlet UIButton *selectButton;
+
+
+- (void) changeHighLightWithBool: (BOOL) highlight;
+
+
 @end
