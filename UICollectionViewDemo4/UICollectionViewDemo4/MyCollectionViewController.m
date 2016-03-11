@@ -16,7 +16,7 @@
 #define CELL_MIN_HEIGHT 50
 #define CELL_MAX_HEIGHT 200
 #define SECTIONS_COUNT 1
-#define CELL_COUNT 1000
+#define CELL_COUNT 200
 #define SCROLL_OFFSET_Y 300
 
 @interface MyCollectionViewController () <CustomeCollectionViewLayoutDelegate>
@@ -24,8 +24,11 @@
 @property (strong, nonatomic) CustomeCollectionViewLayout *customeLayout;
 
 @property (nonatomic) NSInteger cellColumn;
+
 @property (nonatomic) CGFloat cellMargin;
+
 @property (nonatomic) CGFloat cellMinHeight;
+
 @property (nonatomic) CGFloat cellMaxHeight;
 
 @end
@@ -36,7 +39,7 @@ static NSString * const reuseIdentifier = @"Cell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.collectionView.backgroundColor=[UIColor whiteColor];
     _customeLayout = (CustomeCollectionViewLayout *) self.collectionViewLayout;
     _customeLayout.layoutDelegate = self;
     
