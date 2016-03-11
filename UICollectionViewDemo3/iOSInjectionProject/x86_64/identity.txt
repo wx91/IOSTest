@@ -1,0 +1,2 @@
+/Users/wangx/Library/Developer/Xcode/DerivedData/UICollectionViewDemo3-cimoafhvltyoxfdydknlynnhqnnv/Build/Products/Debug-iphonesimulator/UICollectionViewDemo3.app
+
