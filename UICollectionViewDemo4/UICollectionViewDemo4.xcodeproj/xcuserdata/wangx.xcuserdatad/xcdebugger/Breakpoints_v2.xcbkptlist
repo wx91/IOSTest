@@ -33,6 +33,38 @@
             endingLineNumber = "13"
             landmarkName = "columnTextField"
             landmarkType = "19">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[SettingTableViewController columnTextField]"
+                  moduleName = "UICollectionViewDemo4"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wangx/GitHub/IOSTest/UICollectionViewDemo4/UICollectionViewDemo4/SettingTableViewController.m"
+                  timestampString = "479369289.280061"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[SettingTableViewController setColumnTextField:]"
+                  moduleName = "UICollectionViewDemo4"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wangx/GitHub/IOSTest/UICollectionViewDemo4/UICollectionViewDemo4/SettingTableViewController.m"
+                  timestampString = "479369289.280559"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -41,13 +73,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "UICollectionViewDemo4/MyCollectionViewController.m"
-            timestampString = "479362329.715027"
+            filePath = "UICollectionViewDemo4/CustomeCollectionViewLayout.m"
+            timestampString = "479369926.276477"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
-            landmarkName = "-tapSettingButton:"
+            startingLineNumber = "207"
+            endingLineNumber = "207"
+            landmarkName = "-minCellYArrayWithArray:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UICollectionViewDemo4/CustomeCollectionViewLayout.m"
+            timestampString = "479369927.783937"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "225"
+            endingLineNumber = "225"
+            landmarkName = "-minCellYArrayWithArray:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

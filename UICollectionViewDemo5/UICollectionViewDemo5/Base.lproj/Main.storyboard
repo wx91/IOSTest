@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="SP6-rJ-Ber">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--My Collection View Controller-->
+        <scene sceneID="o3g-fu-WZS">
+            <objects>
+                <collectionViewController storyboardIdentifier="MyCollectionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="SP6-rJ-Ber" customClass="MyCollectionViewController" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="1U2-Eb-Jlm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewLayout key="collectionViewLayout" id="Yuj-ft-ihD" customClass="CustomTransformCollecionLayout"/>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="DCZ-0T-0AH" customClass="ImageCollectionViewCell">
+                                <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="000.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="52P-Ad-8bl">
+                                            <rect key="frame" x="5" y="5" width="80" height="80"/>
+                                        </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eLV-7f-xIG">
+                                            <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                            <connections>
+                                                <action selector="tapCellButton:" destination="DCZ-0T-0AH" eventType="touchUpInside" id="FVU-jz-B63"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="eLV-7f-xIG" firstAttribute="leading" secondItem="DCZ-0T-0AH" secondAttribute="leading" id="9fz-Rk-Hsq"/>
+                                    <constraint firstItem="52P-Ad-8bl" firstAttribute="leading" secondItem="DCZ-0T-0AH" secondAttribute="leading" constant="5" id="Ewd-vd-JC7"/>
+                                    <constraint firstAttribute="trailing" secondItem="52P-Ad-8bl" secondAttribute="trailing" constant="5" id="TQN-8B-g6A"/>
+                                    <constraint firstItem="52P-Ad-8bl" firstAttribute="top" secondItem="DCZ-0T-0AH" secondAttribute="top" constant="5" id="UsN-7e-ACT"/>
+                                    <constraint firstAttribute="trailing" secondItem="eLV-7f-xIG" secondAttribute="trailing" id="XKE-jw-IRc"/>
+                                    <constraint firstAttribute="bottom" secondItem="52P-Ad-8bl" secondAttribute="bottom" constant="5" id="fhD-KZ-Hid"/>
+                                    <constraint firstItem="eLV-7f-xIG" firstAttribute="top" secondItem="DCZ-0T-0AH" secondAttribute="top" id="vdf-zT-wQ1"/>
+                                    <constraint firstAttribute="bottom" secondItem="eLV-7f-xIG" secondAttribute="bottom" id="wsc-yF-2U4"/>
+                                </constraints>
+                                <size key="customSize" width="90" height="90"/>
+                                <connections>
+                                    <outlet property="cellImageView" destination="52P-Ad-8bl" id="gVg-yT-iv2"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="SP6-rJ-Ber" id="mS2-TA-91K"/>
+                            <outlet property="delegate" destination="SP6-rJ-Ber" id="eH4-e5-QVa"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xFf-fx-nbt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="329" y="393"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="000.jpg" width="220" height="220"/>
+    </resources>
+</document>
