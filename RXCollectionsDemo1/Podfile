@@ -1,0 +1,2 @@
+platform :ios, '8.4'
+pod 'RXCollections', '~> 1.0'
