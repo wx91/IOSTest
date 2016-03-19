@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "50ADBFBE1C9998370095D04E"
+               BlueprintIdentifier = "50BE9C471C9D056300F4ECB4"
                BuildableName = "ReactiveCocoaDemo1.app"
                BlueprintName = "ReactiveCocoaDemo1"
                ReferencedContainer = "container:ReactiveCocoaDemo1.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "50ADBFD71C9998370095D04E"
+               BlueprintIdentifier = "50BE9C601C9D056300F4ECB4"
                BuildableName = "ReactiveCocoaDemo1Tests.xctest"
                BlueprintName = "ReactiveCocoaDemo1Tests"
                ReferencedContainer = "container:ReactiveCocoaDemo1.xcodeproj">
@@ -42,7 +42,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "50ADBFE21C9998370095D04E"
+               BlueprintIdentifier = "50BE9C6B1C9D056300F4ECB4"
                BuildableName = "ReactiveCocoaDemo1UITests.xctest"
                BlueprintName = "ReactiveCocoaDemo1UITests"
                ReferencedContainer = "container:ReactiveCocoaDemo1.xcodeproj">
@@ -52,7 +52,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "50ADBFBE1C9998370095D04E"
+            BlueprintIdentifier = "50BE9C471C9D056300F4ECB4"
             BuildableName = "ReactiveCocoaDemo1.app"
             BlueprintName = "ReactiveCocoaDemo1"
             ReferencedContainer = "container:ReactiveCocoaDemo1.xcodeproj">
@@ -75,7 +75,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "50ADBFBE1C9998370095D04E"
+            BlueprintIdentifier = "50BE9C471C9D056300F4ECB4"
             BuildableName = "ReactiveCocoaDemo1.app"
             BlueprintName = "ReactiveCocoaDemo1"
             ReferencedContainer = "container:ReactiveCocoaDemo1.xcodeproj">
@@ -94,7 +94,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "50ADBFBE1C9998370095D04E"
+            BlueprintIdentifier = "50BE9C471C9D056300F4ECB4"
             BuildableName = "ReactiveCocoaDemo1.app"
             BlueprintName = "ReactiveCocoaDemo1"
             ReferencedContainer = "container:ReactiveCocoaDemo1.xcodeproj">
