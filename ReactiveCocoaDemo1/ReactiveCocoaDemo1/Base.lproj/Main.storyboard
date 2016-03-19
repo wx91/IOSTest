@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Reactive Sign In-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -18,34 +18,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lbO-dk-Y0C">
-                                <rect key="frame" x="50" y="168" width="220" height="30"/>
+                                <rect key="frame" x="50" y="104" width="220" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="dJf-Je-fUJ"/>
+                                    <constraint firstAttribute="height" constant="30" id="8lP-2B-RZd"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hrr-Yx-Coc">
-                                <rect key="frame" x="50" y="218" width="220" height="30"/>
+                                <rect key="frame" x="50" y="154" width="220" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="bcU-AY-asC"/>
+                                    <constraint firstAttribute="height" constant="30" id="UtF-m8-7qn"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJM-eC-lu0">
-                                <rect key="frame" x="210" y="298" width="60" height="30"/>
+                                <rect key="frame" x="210" y="234" width="60" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="6Wy-Vk-adZ"/>
-                                    <constraint firstAttribute="width" constant="60" id="MmQ-M1-vsJ"/>
+                                    <constraint firstAttribute="height" constant="30" id="33D-fi-hdr"/>
+                                    <constraint firstAttribute="width" constant="60" id="cEP-HF-L2O"/>
                                 </constraints>
                                 <state key="normal" title="Sign In"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invalid credentials" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zmn-9j-e4m">
-                                <rect key="frame" x="50" y="298" width="140" height="30"/>
+                                <rect key="frame" x="50" y="234" width="140" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="TU4-o0-JPd"/>
-                                    <constraint firstAttribute="width" constant="140" id="rfZ-cp-6eR"/>
+                                    <constraint firstAttribute="height" constant="30" id="99c-R4-coe"/>
+                                    <constraint firstAttribute="width" constant="140" id="VHM-Lg-7hi"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -54,28 +54,30 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="hrr-Yx-Coc" firstAttribute="top" secondItem="lbO-dk-Y0C" secondAttribute="bottom" constant="20" id="3BX-PW-hBD"/>
-                            <constraint firstItem="TJM-eC-lu0" firstAttribute="leading" secondItem="zmn-9j-e4m" secondAttribute="trailing" constant="20" id="7u4-YP-VDc"/>
-                            <constraint firstItem="TJM-eC-lu0" firstAttribute="top" secondItem="hrr-Yx-Coc" secondAttribute="bottom" constant="50" id="8M8-L7-pD9"/>
-                            <constraint firstItem="TJM-eC-lu0" firstAttribute="top" secondItem="hrr-Yx-Coc" secondAttribute="bottom" constant="50" id="A7n-Ub-8Dd"/>
-                            <constraint firstItem="lbO-dk-Y0C" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="104" id="HB1-52-WOr"/>
-                            <constraint firstAttribute="trailing" secondItem="lbO-dk-Y0C" secondAttribute="trailing" constant="50" id="Itj-F1-q9a"/>
-                            <constraint firstAttribute="trailing" secondItem="TJM-eC-lu0" secondAttribute="trailing" constant="50" id="Lzz-cy-yCP"/>
-                            <constraint firstItem="zmn-9j-e4m" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="W4u-0Z-LeP"/>
-                            <constraint firstAttribute="trailing" secondItem="hrr-Yx-Coc" secondAttribute="trailing" constant="50" id="Ygd-ds-EEa"/>
-                            <constraint firstItem="hrr-Yx-Coc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="fph-SG-8H9"/>
-                            <constraint firstItem="TJM-eC-lu0" firstAttribute="leading" secondItem="zmn-9j-e4m" secondAttribute="trailing" constant="20" id="pvH-vV-Klz"/>
-                            <constraint firstItem="lbO-dk-Y0C" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="qLN-gc-kgR"/>
-                            <constraint firstItem="zmn-9j-e4m" firstAttribute="top" secondItem="hrr-Yx-Coc" secondAttribute="bottom" constant="50" id="qwo-T1-wca"/>
+                            <constraint firstItem="lbO-dk-Y0C" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="104" id="3Pr-hX-TkK"/>
+                            <constraint firstItem="TJM-eC-lu0" firstAttribute="top" secondItem="hrr-Yx-Coc" secondAttribute="bottom" constant="50" id="Bt5-fR-t78"/>
+                            <constraint firstAttribute="trailing" secondItem="TJM-eC-lu0" secondAttribute="trailing" constant="50" id="GXj-Hg-pNd"/>
+                            <constraint firstAttribute="trailing" secondItem="hrr-Yx-Coc" secondAttribute="trailing" constant="50" id="ON2-tt-lbA"/>
+                            <constraint firstItem="TJM-eC-lu0" firstAttribute="leading" secondItem="zmn-9j-e4m" secondAttribute="trailing" constant="20" id="RdR-Fm-kys"/>
+                            <constraint firstItem="hrr-Yx-Coc" firstAttribute="top" secondItem="lbO-dk-Y0C" secondAttribute="bottom" constant="20" id="WRb-7Z-hfe"/>
+                            <constraint firstItem="zmn-9j-e4m" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="X2f-BB-iJh"/>
+                            <constraint firstItem="zmn-9j-e4m" firstAttribute="top" secondItem="hrr-Yx-Coc" secondAttribute="bottom" constant="50" id="aS9-ka-r9I"/>
+                            <constraint firstItem="TJM-eC-lu0" firstAttribute="leading" secondItem="zmn-9j-e4m" secondAttribute="trailing" constant="20" id="apO-sV-ip6"/>
+                            <constraint firstAttribute="trailing" secondItem="lbO-dk-Y0C" secondAttribute="trailing" constant="50" id="hGM-kW-YdY"/>
+                            <constraint firstItem="hrr-Yx-Coc" firstAttribute="top" secondItem="lbO-dk-Y0C" secondAttribute="bottom" constant="20" id="nOK-3z-jFO"/>
+                            <constraint firstItem="hrr-Yx-Coc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="sw9-GI-nr0"/>
+                            <constraint firstItem="zmn-9j-e4m" firstAttribute="top" secondItem="hrr-Yx-Coc" secondAttribute="bottom" constant="50" id="xKA-ZB-y2Z"/>
+                            <constraint firstItem="lbO-dk-Y0C" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="zRW-B5-cam"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="RtR-Fx-g1B"/>
+                    <navigationItem key="navigationItem" title="Reactive Sign In" id="RtR-Fx-g1B"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="passwordTextField" destination="hrr-Yx-Coc" id="itV-iT-3do"/>
                         <outlet property="signInButton" destination="TJM-eC-lu0" id="QXm-Yo-hRc"/>
                         <outlet property="signInFailureText" destination="zmn-9j-e4m" id="7aE-0V-uVb"/>
                         <outlet property="usernameTextField" destination="lbO-dk-Y0C" id="YxN-9A-EvG"/>
+                        <segue destination="Y02-Fa-3SL" kind="push" identifier="signInSuccess" id="kxC-N1-KgG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -101,5 +103,46 @@
             </objects>
             <point key="canvasLocation" x="-52" y="387"/>
         </scene>
+        <!--Kitten!-->
+        <scene sceneID="Thh-EV-fhV">
+            <objects>
+                <viewController storyboardIdentifier="success" id="Y02-Fa-3SL" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vcr-fK-CzD"/>
+                        <viewControllerLayoutGuide type="bottom" id="ASs-DC-9uq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tqX-aI-dCR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kitten.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="or3-7d-Eac">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="http://www.flickr.com/photos/50362297@N07" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xw6-OK-UJD">
+                                <rect key="frame" x="20" y="537" width="202.5" height="11"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="or3-7d-Eac" firstAttribute="leading" secondItem="tqX-aI-dCR" secondAttribute="leading" id="4Ax-bF-AR5"/>
+                            <constraint firstItem="Xw6-OK-UJD" firstAttribute="leading" secondItem="tqX-aI-dCR" secondAttribute="leading" constant="20" id="CAd-cN-qXl"/>
+                            <constraint firstItem="ASs-DC-9uq" firstAttribute="top" secondItem="Xw6-OK-UJD" secondAttribute="bottom" constant="20" id="VE8-Ay-Nsn"/>
+                            <constraint firstAttribute="bottom" secondItem="or3-7d-Eac" secondAttribute="bottom" id="ZEM-fK-pzr"/>
+                            <constraint firstAttribute="trailing" secondItem="or3-7d-Eac" secondAttribute="trailing" id="jqf-0X-bSn"/>
+                            <constraint firstItem="or3-7d-Eac" firstAttribute="top" secondItem="tqX-aI-dCR" secondAttribute="top" constant="64" id="syQ-wF-kFq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Kitten!" id="PWT-pp-uiW"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jMY-a1-vc7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="817" y="387"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="kitten.jpg" width="537" height="740"/>
+    </resources>
 </document>

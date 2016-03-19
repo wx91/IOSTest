@@ -16,6 +16,9 @@
 		50BE9C5B1C9D056300F4ECB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50BE9C591C9D056300F4ECB4 /* LaunchScreen.storyboard */; };
 		50BE9C661C9D056300F4ECB4 /* ReactiveCocoaDemo1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BE9C651C9D056300F4ECB4 /* ReactiveCocoaDemo1Tests.m */; };
 		50BE9C711C9D056300F4ECB4 /* ReactiveCocoaDemo1UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BE9C701C9D056300F4ECB4 /* ReactiveCocoaDemo1UITests.m */; };
+		50BE9C7E1C9D2C2000F4ECB4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BE9C521C9D056300F4ECB4 /* ViewController.m */; };
+		50BE9C811C9D319200F4ECB4 /* RWDummySignInService.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BE9C801C9D319200F4ECB4 /* RWDummySignInService.m */; };
+		50BE9C831C9D325000F4ECB4 /* kitten.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50BE9C821C9D325000F4ECB4 /* kitten.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,9 @@
 		50BE9C6C1C9D056300F4ECB4 /* ReactiveCocoaDemo1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactiveCocoaDemo1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50BE9C701C9D056300F4ECB4 /* ReactiveCocoaDemo1UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactiveCocoaDemo1UITests.m; sourceTree = "<group>"; };
 		50BE9C721C9D056300F4ECB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50BE9C7F1C9D319200F4ECB4 /* RWDummySignInService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWDummySignInService.h; sourceTree = "<group>"; };
+		50BE9C801C9D319200F4ECB4 /* RWDummySignInService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWDummySignInService.m; sourceTree = "<group>"; };
+		50BE9C821C9D325000F4ECB4 /* kitten.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kitten.jpg; sourceTree = "<group>"; };
 		5113E07378799B4C3FD79217 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,6 +123,9 @@
 		50BE9C4A1C9D056300F4ECB4 /* ReactiveCocoaDemo1 */ = {
 			isa = PBXGroup;
 			children = (
+				50BE9C821C9D325000F4ECB4 /* kitten.jpg */,
+				50BE9C7F1C9D319200F4ECB4 /* RWDummySignInService.h */,
+				50BE9C801C9D319200F4ECB4 /* RWDummySignInService.m */,
 				50BE9C4E1C9D056300F4ECB4 /* AppDelegate.h */,
 				50BE9C4F1C9D056300F4ECB4 /* AppDelegate.m */,
 				50BE9C511C9D056300F4ECB4 /* ViewController.h */,
@@ -273,6 +282,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50BE9C831C9D325000F4ECB4 /* kitten.jpg in Resources */,
 				50BE9C5B1C9D056300F4ECB4 /* LaunchScreen.storyboard in Resources */,
 				50BE9C581C9D056300F4ECB4 /* Assets.xcassets in Resources */,
 				50BE9C561C9D056300F4ECB4 /* Main.storyboard in Resources */,
@@ -351,6 +361,7 @@
 				50BE9C531C9D056300F4ECB4 /* ViewController.m in Sources */,
 				50BE9C501C9D056300F4ECB4 /* AppDelegate.m in Sources */,
 				50BE9C4D1C9D056300F4ECB4 /* main.m in Sources */,
+				50BE9C811C9D319200F4ECB4 /* RWDummySignInService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +377,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50BE9C7E1C9D2C2000F4ECB4 /* ViewController.m in Sources */,
 				50BE9C711C9D056300F4ECB4 /* ReactiveCocoaDemo1UITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
