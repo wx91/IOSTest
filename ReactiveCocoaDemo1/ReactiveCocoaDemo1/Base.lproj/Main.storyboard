@@ -42,12 +42,11 @@
                                 <state key="normal" title="Sign In"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invalid credentials" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zmn-9j-e4m">
-                                <rect key="frame" x="50" y="234" width="140" height="30"/>
+                                <rect key="frame" x="50" y="234" width="150" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="99c-R4-coe"/>
-                                    <constraint firstAttribute="width" constant="140" id="VHM-Lg-7hi"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -55,18 +54,15 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="lbO-dk-Y0C" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="104" id="3Pr-hX-TkK"/>
+                            <constraint firstItem="zmn-9j-e4m" firstAttribute="top" secondItem="hrr-Yx-Coc" secondAttribute="bottom" constant="50" id="8se-MS-0Jh"/>
                             <constraint firstItem="TJM-eC-lu0" firstAttribute="top" secondItem="hrr-Yx-Coc" secondAttribute="bottom" constant="50" id="Bt5-fR-t78"/>
                             <constraint firstAttribute="trailing" secondItem="TJM-eC-lu0" secondAttribute="trailing" constant="50" id="GXj-Hg-pNd"/>
                             <constraint firstAttribute="trailing" secondItem="hrr-Yx-Coc" secondAttribute="trailing" constant="50" id="ON2-tt-lbA"/>
-                            <constraint firstItem="TJM-eC-lu0" firstAttribute="leading" secondItem="zmn-9j-e4m" secondAttribute="trailing" constant="20" id="RdR-Fm-kys"/>
-                            <constraint firstItem="hrr-Yx-Coc" firstAttribute="top" secondItem="lbO-dk-Y0C" secondAttribute="bottom" constant="20" id="WRb-7Z-hfe"/>
+                            <constraint firstItem="TJM-eC-lu0" firstAttribute="leading" secondItem="zmn-9j-e4m" secondAttribute="trailing" constant="10" id="RdR-Fm-kys"/>
                             <constraint firstItem="zmn-9j-e4m" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="X2f-BB-iJh"/>
-                            <constraint firstItem="zmn-9j-e4m" firstAttribute="top" secondItem="hrr-Yx-Coc" secondAttribute="bottom" constant="50" id="aS9-ka-r9I"/>
-                            <constraint firstItem="TJM-eC-lu0" firstAttribute="leading" secondItem="zmn-9j-e4m" secondAttribute="trailing" constant="20" id="apO-sV-ip6"/>
                             <constraint firstAttribute="trailing" secondItem="lbO-dk-Y0C" secondAttribute="trailing" constant="50" id="hGM-kW-YdY"/>
                             <constraint firstItem="hrr-Yx-Coc" firstAttribute="top" secondItem="lbO-dk-Y0C" secondAttribute="bottom" constant="20" id="nOK-3z-jFO"/>
                             <constraint firstItem="hrr-Yx-Coc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="sw9-GI-nr0"/>
-                            <constraint firstItem="zmn-9j-e4m" firstAttribute="top" secondItem="hrr-Yx-Coc" secondAttribute="bottom" constant="50" id="xKA-ZB-y2Z"/>
                             <constraint firstItem="lbO-dk-Y0C" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="zRW-B5-cam"/>
                         </constraints>
                     </view>

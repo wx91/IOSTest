@@ -35,6 +35,17 @@
     // initially hide the failure message
     self.signInFailureText.hidden = YES;
     
+//    [[[self.usernameTextField.rac_textSignal
+//       map:^id(NSString *text) {
+//           return @(text.length);
+//       }]
+//      filter:^BOOL(NSNumber *length) {
+//          return [length integerValue] > 3;
+//      }]
+//     subscribeNext:^(id x) {
+//         NSLog(@"%@", x);
+//     }];
+    
     RACSignal *validUsernameSignal =
     [self.usernameTextField.rac_textSignal map:^id(NSString *text) {
         return @([self isValidUsername:text]);
@@ -45,11 +56,6 @@
      map:^id(NSString *text) {
          return @([self isValidPassword:text]);
      }];
-//    [[validPassword map:^id(NSNumber *passwordValid) {
-//        return [passwordValid boolValue]?[UIColor clearColor]:[UIColor yellowColor];
-//    }]subscribeNext:^(UIColor *color) {
-//        self.passwordTextField.backgroundColor = color;
-//    }];
     RAC(self.passwordTextField,backgroundColor)=
     [validPasswordSignal map:^id(NSNumber *passwordValid) {
         return [passwordValid boolValue]?[UIColor clearColor]:[UIColor yellowColor];
@@ -81,19 +87,6 @@
          }
      }];
 }
-
-//-(RACSignal *)signInSignal{
-//    return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
-//        [self.signInService
-//            signInWithUsername:self.usernameTextField.text
-//                password:self.usernameTextField.text
-//                complete:^(BOOL success) {
-//                    [subscriber sendNext:@(success)];
-//                    [subscriber sendCompleted];
-//                }];
-//        return nil;
-//    }];
-//}
 -(RACSignal *)signInSignal {
     return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
         [self.signInService
