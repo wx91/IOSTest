@@ -131,34 +131,46 @@
         return nil;
     }];
 
+//    RACSubject *subject = [RACSubject subject];
+//    NSLog(@"Subject created.");
+//    
+//    [[RACScheduler mainThreadScheduler] afterDelay:2 schedule:^{
+//        [coldSignal subscribe:subject];
+//    }];
+//    
+//    [subject subscribeNext:^(id x) {
+//        NSLog(@"Subscriber 1 recieve value:%@.", x);
+//    }];
+//    
+//    [[RACScheduler mainThreadScheduler] afterDelay:4 schedule:^{
+//        [subject subscribeNext:^(id x) {
+//            NSLog(@"Subscriber 2 recieve value:%@.", x);
+//    }];
+    
     RACSubject *subject = [RACSubject subject];
     NSLog(@"Subject created.");
     
-    [[RACScheduler mainThreadScheduler] afterDelay:2 schedule:^{
-        [coldSignal subscribe:subject];
-    }];
+//    RACMulticastConnection *multicastConnection = [coldSignal multicast:subject];
+//    RACSignal *hotSignal = multicastConnection.signal;
+//    [[RACScheduler mainThreadScheduler] afterDelay:2 schedule:^{
+//        [multicastConnection connect];
+//    }];
     
-    [subject subscribeNext:^(id x) {
-        NSLog(@"Subscriber 1 recieve value:%@.", x);
-    }];
-    
-    [[RACScheduler mainThreadScheduler] afterDelay:4 schedule:^{
-        [subject subscribeNext:^(id x) {
-            NSLog(@"Subscriber 2 recieve value:%@.", x);
+        RACMulticastConnection *multicastConnection = [coldSignal multicast:subject];
+    RACSignal *hotSignal =multicastConnection.autoconnect;
+        [[RACScheduler mainThreadScheduler] afterDelay:2 schedule:^{
+            [multicastConnection connect];
         }];
     
+    [hotSignal subscribeNext:^(id x) {
+        NSLog(@"Subscriber 1 recieve value:%@.", x);
+        }];
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    [[RACScheduler mainThreadScheduler] afterDelay:4 schedule:^{
+        [hotSignal subscribeNext:^(id x) {
+            NSLog(@"Subscriber 2 recieve value:%@.", x);
+        }];
+    }];
     
     
     
